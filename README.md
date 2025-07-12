@@ -1,4 +1,3 @@
-```
 # Human-Inspired Walking with Deep Reinforcement Learning 🦿🧠
 
 A reinforcement learning research project that teaches an agent to walk like a human in the `BipedalWalker-v3` environment using advanced techniques like Behavior Cloning, Reward Shaping, and Deep RL algorithms (PPO, TD3, SAC).
