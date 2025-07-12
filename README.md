@@ -23,12 +23,8 @@ Design and train a reinforcement learning agent that can achieve **stable, energ
 ### 🔄 MDP Formulation
 - **States (S)**: 24D continuous vector
 - **Actions (A)**: 4D continuous torque (range: [-1, 1])
-- **Reward (R)**:  
-```
+- **Reward (R)**:  R = R(env) + 0.5 \* cosine\_similarity(s, s\_ref) - 0.01 \* Σ(a²)
 
-R = R(env) + 0.5 \* cosine\_similarity(s, s\_ref) - 0.01 \* Σ(a²)
-
-```
 where:
 - `R(env)`: base reward from BipedalWalker
 - `cosine_similarity`: match with expert motion
